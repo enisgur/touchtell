@@ -10,6 +10,7 @@ import {
 
 // SET AXIOS PROXY BASEURL
 axios.defaults.baseURL = axiosURL;
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
 export const getAllProducts = () => async dispatch => {
   try {
