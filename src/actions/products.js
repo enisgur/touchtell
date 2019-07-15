@@ -1,11 +1,15 @@
 import axios from 'axios';
 import {
+  axiosURL,
   GET_ALLPRODUCTS,
   SEARCH_PRODUCTS,
   SEARCH_PRODUCT_CATEGORY,
   CLEAR_PRODUCTS,
   SEARCHING
 } from './types';
+
+// SET AXIOS PROXY BASEURL
+axios.defaults.baseURL = axiosURL;
 
 export const getAllProducts = () => async dispatch => {
   try {

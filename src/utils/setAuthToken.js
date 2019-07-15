@@ -1,4 +1,7 @@
 import axios from 'axios';
+import { axiosURL } from '../actions/types';
+// SET AXIOS PROXY BASEURL
+axios.defaults.baseURL = axiosURL;
 
 const setAuthToken = token => {
   if (token) {

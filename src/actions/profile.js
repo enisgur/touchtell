@@ -1,7 +1,10 @@
 import axios from 'axios';
 import { setAlert } from './alert';
 
-import { GET_PROFILE, PROFILE_ERROR } from './types';
+import { axiosURL, GET_PROFILE, PROFILE_ERROR } from './types';
+
+// SET AXIOS PROXY BASEURL
+axios.defaults.baseURL = axiosURL;
 
 // Get current users profile
 export const getCurrentProfile = () => async dispatch => {

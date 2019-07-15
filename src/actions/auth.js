@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { setAlert } from './alert';
 import {
+  axiosURL,
   REGISTER_FAIL,
   REGISTER_SUCCESS,
   USER_LOADED,
@@ -11,6 +12,9 @@ import {
   CLEAR_PROFILE
 } from './types';
 import setAuthToken from '../utils/setAuthToken';
+
+// SET AXIOS PROXY BASEURL
+axios.defaults.baseURL = axiosURL;
 
 // Load User
 export const loadUser = () => async dispatch => {
