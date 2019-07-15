@@ -15,7 +15,6 @@ import setAuthToken from '../utils/setAuthToken';
 
 // SET AXIOS PROXY BASEURL
 axios.defaults.baseURL = axiosURL;
-window.axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
 // Load User
 export const loadUser = () => async dispatch => {

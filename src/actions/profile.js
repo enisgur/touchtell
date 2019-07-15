@@ -5,7 +5,6 @@ import { axiosURL, GET_PROFILE, PROFILE_ERROR } from './types';
 
 // SET AXIOS PROXY BASEURL
 axios.defaults.baseURL = axiosURL;
-window.axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
 // Get current users profile
 export const getCurrentProfile = () => async dispatch => {
