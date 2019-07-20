@@ -25,7 +25,7 @@ COLORS
   --sub-nav: #727171;
   --footer-text: #172232;
   /* --footer-text: #ffffff; */
-  --footer-background: #aaa9a9;
+  --footer-background: #cccccc;
 }
 
 * {
@@ -280,7 +280,6 @@ header .topNav .bodyTopNav ul li a {
 .body .body-body .items .itemPic img {
   width: 200px;
   height: 200px;
-  border-radius: 100px;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////// */
@@ -414,6 +413,52 @@ header .topNav .bodyTopNav ul li a {
 }
 
 /* .form .form-group  */
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* PAGINATING PAGE */
+/* ////////////////////////////////////////////////////////////////////////////// */
+.pagination {
+  position: relative;
+  margin-bottom: 100px;
+  /* width: 90%; */
+  /* margin: 0 auto; */
+}
+.pagination ul {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.pagination ul > li {
+  display: inline;
+  /* box-sizing: border-box; */
+  margin-right: 20px;
+
+  /* margin-bottom: 50px; */
+  /* margin: 20px auto */
+  /* width: 90%; */
+  /* margin: 0 auto; */
+}
+
+.pagination ul li button {
+  width: 60px;
+  height: 35px;
+
+  border: none;
+  border-radius: 100px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.pagination ul li .otherPages {
+  background-color: #e2f1fd;
+  color: #172232;
+}
+.pagination ul li .currentPage {
+  background-color: #eef6fd;
+  color: rgb(250, 187, 187);
+}
 
 /* ////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////// */

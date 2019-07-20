@@ -2,6 +2,7 @@ import {
   GET_ALLPRODUCTS,
   SEARCH_PRODUCTS,
   SEARCH_PRODUCT_CATEGORY,
+  CATEGORY_PAGINATING,
   CLEAR_PRODUCTS,
   SEARCHING
 } from '../actions/types';
@@ -24,6 +25,7 @@ export default function(state = initialState, action) {
       };
     case SEARCH_PRODUCTS:
     case SEARCH_PRODUCT_CATEGORY:
+    case CATEGORY_PAGINATING:
       return {
         ...state,
         products: payload,

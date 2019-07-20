@@ -1,4 +1,5 @@
-export const axiosURL = 'https://touchtell-server.herokuapp.com/';
+// export const axiosURL = 'https://touchtell-server.herokuapp.com/';
+export const axiosURL = 'http://localhost:5000/';
 export const SET_ALERT = 'SET_ALERT';
 export const REMOVE_ALERT = 'REMOVE_ALERT';
 export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
@@ -14,5 +15,6 @@ export const CLEAR_PROFILE = 'CLEAR_PROFILE';
 export const GET_ALLPRODUCTS = 'ALL_PRODUCTS';
 export const SEARCH_PRODUCTS = 'SEARCH_PRODUCTS';
 export const SEARCH_PRODUCT_CATEGORY = 'SEARCH_PRODUCT_CATEGORY';
+export const CATEGORY_PAGINATING = 'CATEGORY_PAGINATING';
 export const CLEAR_PRODUCTS = 'CLEAR_PRODUCTS';
 export const SEARCHING = 'SEARCHING';

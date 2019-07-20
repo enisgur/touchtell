@@ -4,6 +4,7 @@ import {
   GET_ALLPRODUCTS,
   SEARCH_PRODUCTS,
   SEARCH_PRODUCT_CATEGORY,
+  CATEGORY_PAGINATING,
   CLEAR_PRODUCTS,
   SEARCHING
 } from './types';
@@ -33,6 +34,25 @@ export const searchProducts = search => async dispatch => {
 
     dispatch({
       type: SEARCH_PRODUCTS,
+      payload: res.data
+    });
+  } catch (err) {
+    console.log(err);
+
+    dispatch({
+      type: CLEAR_PRODUCTS
+    });
+  }
+};
+
+export const categoryPaginating = (search, page) => async dispatch => {
+  try {
+    const res = await axios.get(
+      `/api/products/category/${search}?page=${page}`
+    );
+
+    dispatch({
+      type: CATEGORY_PAGINATING,
       payload: res.data
     });
   } catch (err) {
