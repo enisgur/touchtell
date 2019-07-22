@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import ProductsListing from './comp/ProductsListing';
 import Search from './comp/Search';
 import CategoriesNav from './comp/CategoriesNav';
+import Reviews from './comp/Reviews';
 
 const Landing = ({ isAuthenticated }) => {
   // if user loged in redirect to /dashboard
@@ -31,11 +32,10 @@ const Landing = ({ isAuthenticated }) => {
 
       <div className="body-body">
         <Search />
-        {/* <div className="search">
-          <input type="text" placeholder="&#128270; Search.." />
-        </div> */}
 
         <ProductsListing />
+
+        <Reviews />
       </div>
     </div>
   );

@@ -10,6 +10,8 @@ const Footer = () => {
         </div>
         <div className="address">
           <div className="title">Address</div>
+          <h6>Grossmont Center</h6>
+          <br />
           <span>5500 Grossmont Boulevard suite b La Mesa, CA 91942 USA </span>
           <span className="address-details">
             Next to Wallmart, Front of the Barnes & Nobles
