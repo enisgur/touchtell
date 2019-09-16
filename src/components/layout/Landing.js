@@ -21,7 +21,7 @@ const Landing = ({ isAuthenticated }) => {
           <div className="bodybody">
             <h1>Touch Tel Wireless</h1>
             <h3>Your local phone, tablet repair and accessories place.</h3>
-            <Link className="button" to="#fix">
+            <Link className="button" to="/fix">
               Broken Device ?
             </Link>
           </div>

@@ -11,6 +11,8 @@ import CreateProfile from './components/profile-forms/CreateProfile';
 import EditProfile from './components/profile-forms/EditProfile';
 import PrivateRoute from './components/routing/PrivateRoute';
 
+import FixPage from './components/fix/Fix';
+
 // Redux
 import { Provider } from 'react-redux';
 import store from './store';
@@ -41,6 +43,7 @@ const App = () => {
             <Switch>
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/fix" component={FixPage} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute
                 exact

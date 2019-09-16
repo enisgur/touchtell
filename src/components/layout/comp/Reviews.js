@@ -12,7 +12,7 @@ const Reviews = props => {
           viewBox="0 0 1400 292.781"
         >
           <path
-            class="reviews_SVG"
+            className="reviews_SVG"
             d="M0,45s344.368,85.027,690.345,0S1400,45,1400,45l-1,258H-3Z"
             transform="translate(0 -7.219)"
           />
@@ -22,35 +22,35 @@ const Reviews = props => {
         <div className="review">
           <div className="stars">
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
@@ -65,35 +65,35 @@ const Reviews = props => {
         <div className="review">
           <div className="stars">
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
@@ -111,35 +111,35 @@ const Reviews = props => {
         <div className="review">
           <div className="stars">
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
             <svg
-              class="Pmm3mc"
+              className="Pmm3mc"
               style={{ fill: 'red', width: '40px', height: '40px' }}
               viewBox="0 0 24 24"
             >
