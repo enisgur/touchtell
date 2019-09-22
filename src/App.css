@@ -539,6 +539,11 @@ header .topNav .bodyTopNav ul li a {
   text-align: center;
   font-size: 1.3em;
   color: var(--footer-text);
+  margin-bottom: 20px;
+}
+
+.fix-layout .fix-selected {
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -630,6 +635,69 @@ header .topNav .bodyTopNav ul li a {
   color: #290713;
   font-weight: bold;
   font-style: italic;
+}
+
+/* ///////////////////////////////// */
+/* BOOKING SUBMIT FORM */
+/* ////////////////////////////// */
+/* ///////////////////////////////// */
+
+.fix-layout .bookingForm {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.fix-layout .bookingForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fix-layout .bookingForm form .formGroup {
+  margin-bottom: 20px;
+}
+
+.fix-layout .bookingForm form .formGroup label {
+  display: block;
+}
+
+.fix-layout .bookingForm form .formGroup input[type='text'],
+.fix-layout .bookingForm form .formGroup input[type='tel'],
+.fix-layout .bookingForm form .formGroup input[type='email'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.fix-layout .bookingForm form .formGroup input[type='text']:focus,
+.fix-layout .bookingForm form .formGroup input[type='tel']:focus,
+.fix-layout .bookingForm form .formGroup input[type='email']:focus {
+  border: 3px solid #555;
+}
+.fix-layout .bookingForm form .formGroup #date {
+  width: 100%;
+}
+
+.fix-layout .bookingForm form .formGroup #hours {
+  width: 100%;
+}
+
+.fix-layout .bookingForm form .formGroup .booking-textarea {
+  width: 100%;
+  height: 5rem;
+}
+
+.fix-layout .bookingForm form input[type='submit'] {
+  font-size: 1.4rem;
+  padding: 10px 35px;
+  border: none;
+  background-color: var(--red);
+  color: var(--white);
+  align-self: flex-end;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////// */

@@ -8,11 +8,27 @@ import {
   DELETESELECTEDMODEL,
   DELETESELECTEDISSUE,
   ALLFIX,
-  ALLMODELS
+  ALLMODELS,
+  GETDATE
 } from './types';
 
 // SET AXIOS PROXY BASEURL
 axios.defaults.baseURL = axiosURL;
+
+export const getDate = () => async dispatch => {
+  try {
+    const res = await axios.get('/date');
+    // var returnDate = await res.data.date;
+    // console.log(res.data.date);
+
+    dispatch({
+      type: GETDATE,
+      payload: res.data.date
+    });
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 export const getSelectedBrand = brand => async dispatch => {
   try {

@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 import { getSelectedIssue, deleteSelectedModel } from '../../actions/fix';
 
-const Issue = ({ getSelectedIssue, deleteSelectedModel }) => {
+const Issue = ({ getSelectedIssue, deleteSelectedModel, fix }) => {
   let onClick = e => {
     // const { name } = e.target;
     const { id } = e.target;
@@ -26,6 +26,13 @@ const Issue = ({ getSelectedIssue, deleteSelectedModel }) => {
       <div className="fix-layout">
         <div className="fix-title">What is the Issue ?</div>
         <div className="fix-title-detail">What issue or issues you have ?</div>
+        <div className="fix-selected">
+          {fix.selectedBrand
+            ? fix.selectedModel
+              ? `${fix.selectedBrand} > ${fix.selectedModel}`
+              : fix.selectedBrand
+            : 'No Brand'}
+        </div>
         <div className="fix-items lay-tree">
           <div className="fix-item" onClick={e => onClick(e)}>
             <div id="screen" className="fix-hover"></div>
@@ -65,10 +72,13 @@ const Issue = ({ getSelectedIssue, deleteSelectedModel }) => {
 
 Issue.propTypes = {
   deleteSelectedModel: PropTypes.func.isRequired,
-  getSelectedIssue: PropTypes.func.isRequired
+  getSelectedIssue: PropTypes.func.isRequired,
+  fix: PropTypes.object.isRequired
 };
 
-const mapStateToProp = state => ({});
+const mapStateToProp = state => ({
+  fix: state.fix
+});
 
 export default connect(
   mapStateToProp,

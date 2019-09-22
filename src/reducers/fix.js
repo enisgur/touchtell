@@ -6,7 +6,8 @@ import {
   DELETESELECTEDMODEL,
   DELETESELECTEDISSUE,
   ALLFIX,
-  ALLMODELS
+  ALLMODELS,
+  GETDATE
 } from '../actions/types';
 
 const initialState = {
@@ -16,6 +17,7 @@ const initialState = {
   selectedModel: null,
   selectedIssue: null,
   loading: true,
+  dateNow: null,
   error: {}
 };
 
@@ -23,6 +25,12 @@ export default function(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
+    case GETDATE:
+      return {
+        ...state,
+        dateNow: payload,
+        loading: false
+      };
     case SELECTEDBRAND:
       return {
         ...state,
