@@ -9,11 +9,70 @@ import {
   DELETESELECTEDISSUE,
   ALLFIX,
   ALLMODELS,
-  GETDATE
+  GETDATE,
+  SUBMITBOOKING
 } from './types';
 
 // SET AXIOS PROXY BASEURL
 axios.defaults.baseURL = axiosURL;
+
+// SUBMIT BOOKING
+export const sumbitBooking = ({
+  date,
+  hours,
+  lastName,
+  mail,
+  message,
+  name,
+  phone
+}) => async dispatch => {
+  const config = {
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+
+  const body = JSON.stringify({
+    date,
+    hours,
+    lastName,
+    mail,
+    message,
+    name,
+    phone
+  });
+
+  try {
+    const res = await axios.post('/api/fix/booking', body, config);
+
+    dispatch({
+      type: SUBMITBOOKING,
+      payload: res.data
+    });
+
+    // dispatch(loadUser());
+  } catch (err) {
+    const errors = err.response.data.errors;
+
+    //   if (errors) {
+    //     errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+    //   }
+
+    //   dispatch({
+    //     type: REGISTER_FAIL
+    //   });
+    // }
+
+    if (errors) {
+      // errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
+      console.log(errors);
+    }
+
+    // dispatch({
+    //   type: REGISTER_FAIL
+    // });
+  }
+};
 
 export const getDate = () => async dispatch => {
   try {

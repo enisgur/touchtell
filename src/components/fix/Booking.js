@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 // import Brand from './Brand';
 // import Model from './Model';
 
-import { deleteSelectedIssue, getDate } from '../../actions/fix';
+import { deleteSelectedIssue, getDate, sumbitBooking } from '../../actions/fix';
 
-const Booking = ({ fix, deleteSelectedIssue, getDate }) => {
+const Booking = ({ fix, deleteSelectedIssue, getDate, sumbitBooking }) => {
   useEffect(() => {
     getDate();
   }, []);
@@ -18,9 +18,11 @@ const Booking = ({ fix, deleteSelectedIssue, getDate }) => {
     lastName: '',
     phone: '',
     mail: '',
+    // date: `2019-09-24`,
     date: '',
-    hours: '',
-    message: ''
+    hours: 'morning',
+    message: '',
+    once: true
   });
 
   const { name } = formData;
@@ -30,6 +32,7 @@ const Booking = ({ fix, deleteSelectedIssue, getDate }) => {
   const { date } = formData;
   const { hours } = formData;
   const { message } = formData;
+  const { once } = formData;
 
   const onChange = e =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -39,7 +42,8 @@ const Booking = ({ fix, deleteSelectedIssue, getDate }) => {
     // clearProducts();
     // searching();
     // searchProducts(search);
-    console.log(formData);
+    sumbitBooking(formData);
+    // console.log(formData);
   };
 
   let onGoBack = e => {
@@ -50,6 +54,12 @@ const Booking = ({ fix, deleteSelectedIssue, getDate }) => {
   };
   return (
     <Fragment>
+      {/* select todays date by default */}
+      {once
+        ? fix.dateNow
+          ? setFormData({ ...formData, date: fix.dateNow, once: false })
+          : ''
+        : ''}
       <div className="fix-layout">
         <div className="fix-title">Booking</div>
         <div className="fix-title-detail">Select "day" and "time"</div>
@@ -135,6 +145,7 @@ const Booking = ({ fix, deleteSelectedIssue, getDate }) => {
               >
                 <option
                   value="morning"
+
                   // value={hours.morning}
                 >
                   10AM - 1PM
@@ -188,6 +199,7 @@ const Booking = ({ fix, deleteSelectedIssue, getDate }) => {
 Booking.propTypes = {
   getDate: PropTypes.func.isRequired,
   deleteSelectedIssue: PropTypes.func.isRequired,
+  sumbitBooking: PropTypes.func.isRequired,
   fix: PropTypes.object
 };
 
@@ -197,5 +209,5 @@ const mapStateToProp = state => ({
 
 export default connect(
   mapStateToProp,
-  { deleteSelectedIssue, getDate }
+  { deleteSelectedIssue, getDate, sumbitBooking }
 )(Booking);

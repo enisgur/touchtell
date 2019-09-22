@@ -14,6 +14,12 @@ const Fix = ({ getAllBrand, fix }) => {
     getAllBrand();
   }, []);
   const testPage = () => {
+    if (fix.booked) {
+      if (fix.booked.ok) {
+        return <div className="success">perfecto</div>;
+      }
+    }
+
     // console.log(fix.fix.brand);
     if (fix.selectedBrand) {
       if (fix.selectedModel) {

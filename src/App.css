@@ -561,6 +561,7 @@ header .topNav .bodyTopNav ul li a {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 80%;
   height: 200px;
   width: 80%;
   border: 1px #172232 solid;
@@ -588,8 +589,8 @@ header .topNav .bodyTopNav ul li a {
 
 .fix-layout .fix-items .fix-item img {
   width: 60%;
-  height: 110%;
-  margin-top: 50px;
+  height: 80%;
+  /* margin-top: 50px; */
   justify-self: center;
   align-self: center;
   border-radius: 30px 30px 0 0;

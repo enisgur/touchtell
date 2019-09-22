@@ -7,7 +7,8 @@ import {
   DELETESELECTEDISSUE,
   ALLFIX,
   ALLMODELS,
-  GETDATE
+  GETDATE,
+  SUBMITBOOKING
 } from '../actions/types';
 
 const initialState = {
@@ -25,6 +26,12 @@ export default function(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
+    case SUBMITBOOKING:
+      return {
+        ...state,
+        booked: payload,
+        loading: false
+      };
     case GETDATE:
       return {
         ...state,

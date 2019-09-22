@@ -28,3 +28,4 @@ export const DELETESELECTEDISSUE = 'DELETESELECTEDISSUE';
 export const ALLFIX = 'ALLFIX';
 export const ALLMODELS = 'ALLMODELS';
 export const GETDATE = 'GETDATE';
+export const SUBMITBOOKING = 'SUBMITBOOKING';
